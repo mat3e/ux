@@ -1,0 +1,12 @@
+{
+    "name": "example-all",
+    "version": "0.0.1",
+
+    "scripts": {
+        "start": "lite-server"
+    },
+
+    "devDependencies": {
+        "lite-server": "^2.2.2"
+    }
+}
