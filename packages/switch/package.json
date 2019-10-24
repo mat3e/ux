@@ -1,0 +1,23 @@
+{
+  "name": "@mat3e/switch",
+  "version": "0.1.0",
+  "description": "Switch button, a checkbox wrapper",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mat3e/ux.git"
+  },
+  "keywords": [
+    "switch",
+    "web",
+    "components",
+    "checkbox",
+    "ux"
+  ],
+  "author": "mat3e",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mat3e/ux/issues"
+  },
+  "homepage": "https://mat3e.github.io/ux"
+}
