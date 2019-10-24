@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "test": "jest --env=jest-environment-happy-dom"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "jest": "^24.9.0",
+    "jest-environment-happy-dom": "0.0.26",
+    "lerna": "^3.18.3"
+  }
+}
