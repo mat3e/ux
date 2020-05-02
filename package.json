@@ -2,7 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "test": "jest --env=./temp-env"
+    "test": "jest --env=./temp-env",
+    "publish": "npm run test && lerna publish"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.9.6",
