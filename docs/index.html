@@ -2,18 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Demo</title>
+    <title>@mat3e-ux demos</title>
+    <link rel="stylesheet" href="https://igoradamenko.github.io/awsm.css/css/awsm.min.css">
+    <style>
+        pre {
+            border: solid 1px black;
+        }
+    </style>
 </head>
 <body>
-<pre style="margin-top: 0; border: 1px solid black">
-    <style style="display: inline-block;" contentEditable="true">
-/* uncomment to change the CSS of the components */
-:root {
+<header>
+    <h1>@mat3e-ux</h1>
+    <p>Web Components all the things!</p>
+    <nav>
+        <ul>
+            <li>
+                <a href="#switch">@mat3e-ux/switch</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article>
+        <section id="switch"></section>
+        <h2>@mat3e-ux/switch</h2>
+        <p>A simple switch button.</p>
+        <section>
+            <h3>Setup - npm</h3>
+            <p>Install from npm:</p>
+            <pre><code>npm i @mat3e-ux/switch</code></pre>
+            <p>Simple one-time import:</p>
+            <pre><code>import '@mat3e-ux/switch';</code></pre>
+            <p><strong>or</strong> "manual" registration:</p>
+            <pre><code>import Switch from '@mat3e-ux/switch/component';
+
+Switch.register();</code></pre>
+        </section>
+        <section>
+            <h3>Usage</h3>
+            <pre><code>&lt;m3-switch>&lt;/m3-switch></code></pre>
+            <m3-switch></m3-switch>
+            <pre><code>&lt;m3-switch round checked>&lt;/m3-switch></code></pre>
+            <m3-switch round checked></m3-switch>
+            <pre><code>&lt;m3-switch name="test" onchange="alert('changed!');">&lt;/m3-switch></code></pre>
+            <m3-switch name="test" onchange="alert('changed!');"></m3-switch>
+        </section>
+        <section>
+            <h3>CSS variables (override below)</h3>
+            <pre><style
+                    style="display: inline-block;"
+                    contentEditable="true">:root {
     /*--m3-switch-color: #1da1f2;*/
-}
-    </style>
-</pre>
-<m3-switch name="test"></m3-switch>
+}</style></pre>
+        </section>
+    </article>
+</main>
 <script type="module" src="dist/main.js"></script>
 </body>
 </html>

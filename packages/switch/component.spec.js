@@ -32,10 +32,29 @@ describe('m3-switch', () => {
         expect(toTest.checked).toBe(true);
 
         // when
-        console.log(toTest.click);
         toTest.click();
 
         // then
         expect(toTest.checked).toBe(false);
+    });
+
+    it('should emit after change', () => {
+        // given
+        const callback = jest.fn();
+        const document = new Window().document;
+        document.body.innerHTML = `
+            <label>
+                <m3-switch checked> test
+            </label>
+        `;
+        const toTest = document.querySelector('m3-switch');
+        toTest.addEventListener('change', callback);
+
+        // when
+        toTest.click();
+        toTest.click();
+
+        // then
+        expect(callback.mock.calls.length).toBe(2);
     });
 });
