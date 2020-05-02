@@ -1,9 +1,9 @@
 {
-  "name": "@mat3e-ux/root",
+  "name": "root",
   "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "jest --env=./temp-env",
-    "publish": "npm run test && lerna publish"
+    "test": "jest --env=./temp-env"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.9.6",
