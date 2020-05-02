@@ -1,6 +1,6 @@
 {
   "name": "@mat3e-ux/switch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Switch button, a checkbox wrapper",
   "main": "index.js",
   "repository": {
