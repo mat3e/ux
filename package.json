@@ -1,7 +1,6 @@
 {
-  "name": "root",
+  "name": "@mat3e-ux/root",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "test": "jest --env=./temp-env",
     "publish": "npm run test && lerna publish"
