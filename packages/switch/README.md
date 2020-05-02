@@ -1,3 +1,5 @@
+[![Version](https://img.shields.io/npm/v/@mat3e-ux/switch.svg)](https://www.npmjs.com/package/@mat3e-ux/switch)
+
 # @mat3e-ux/switch
 A simple switch button.
 
@@ -29,6 +31,6 @@ Switch.register();
 ```
 
 ### Exposed CSS variables
-```css
+```
 --m3-switch-color: #4fd69c;
 ```
