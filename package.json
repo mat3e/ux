@@ -2,12 +2,15 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "test": "jest --env=jest-environment-happy-dom"
+    "test": "jest --env=./temp-env"
   },
   "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
-    "jest": "^24.9.0",
-    "jest-environment-happy-dom": "0.0.26",
-    "lerna": "^3.18.3"
+    "@babel/plugin-transform-modules-commonjs": "^7.9.6",
+    "@jest/fake-timers": "^25.5.0",
+    "happy-dom": "github:mat3e/happy-dom#lib-temp",
+    "jest": "^25.5.3",
+    "jest-mock": "^25.5.0",
+    "jest-util": "^25.5.0",
+    "lerna": "^3.20.2"
   }
 }

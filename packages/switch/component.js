@@ -41,9 +41,6 @@ export default class Switch extends CheckboxWrapper {
             <div class="slider${this.round ? ' round' : ''}"></div>
         `;
         this.shadowRoot.prepend(this.input);
-        this.shadowRoot.appendChild(document.getElementById('style-template')
-          .content
-          .cloneNode(true));
         this.onclick = (e) => {
             e.preventDefault();
             this.checked = !this.checked;
