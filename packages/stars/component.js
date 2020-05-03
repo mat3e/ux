@@ -13,7 +13,7 @@ export default class Stars extends HTMLElement {
     connectedCallback() {
         const currentValue = +this.getAttribute('current') || 0;
         this.shadowRoot.innerHTML = `
-        <style>span:before{position:absolute;content:'${this.full}';width:${currentValue%1}em;overflow:hidden}</style>
+        <style>:host{display:inline-block}span:before{position:absolute;content:'${this.full}';width:${currentValue%1}em;overflow:hidden}</style>
         ${getStarsString(parseInt(this.getAttribute('max')) || 0, currentValue, this.full, this.empty)}`;
     }
 }

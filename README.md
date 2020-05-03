@@ -22,3 +22,8 @@ Set of small Web Components which should have a positive impact on the web app U
 - [Scrolline](https://github.com/anthonyly/Scrolline.js) - how much untill the end of the page
 - [iziToast](https://github.com/dolce/iziToast) - perfect notifications
 - [favico.js](https://github.com/ejci/favico.js) - whole new level of using favicons
+
+## Roadmap
+[] Minify published npm code and skip publishing *.spec.js files
+
+[] Use JS private and static fields (when available in all the browsers). Or maybe just TypeScript?
