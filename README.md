@@ -11,7 +11,7 @@ Set of small Web Components which should have a positive impact on the web app U
 ### Inspirations
 
 #### Ideas
-- [clickable reactions](https://dev.to/binarforge/seven-useful-programming-habits) (e.g. with [Font Awesome](http://fontawesome.io/))
+- [clickable reactions](https://dev.to/binarforge/seven-useful-programming-habits) (e.g. with [Font Awesome](https://fontawesome.io/))
 - highlighted text options - as [here](https://medium.com/@ttemplier/angular2-decorators-and-class-inheritance-905921dbd1b7)
 - paragraph link - as [here](https://olingo.apache.org/doc/odata4/tutorials/action/tutorial_action.html#implement-an-action-processor)
 - opening link in a new tab - option when `:hover`

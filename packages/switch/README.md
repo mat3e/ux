@@ -11,7 +11,7 @@ A simple switch button
 
 ### CDN
 ```html
-<script type="module" src="http://unpkg.com/@mat3e-ux/switch"></script>
+<script type="module" src="https://unpkg.com/@mat3e-ux/switch"></script>
 ```
 
 ### npm

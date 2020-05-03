@@ -11,7 +11,7 @@ Display rating as stars (readonly)
 
 ### CDN
 ```html
-<script type="module" src="http://unpkg.com/@mat3e-ux/stars"></script>
+<script type="module" src="https://unpkg.com/@mat3e-ux/stars"></script>
 ```
 
 ### npm
