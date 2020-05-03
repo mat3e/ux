@@ -1,4 +1,3 @@
-import {Window} from 'happy-dom';
 import './index';
 
 describe('m3-switch', () => {
@@ -7,7 +6,7 @@ describe('m3-switch', () => {
         const form = document.createElement('form');
         form.innerHTML = `
             <label>
-                <m3-switch checked> test
+                <m3-switch checked></m3-switch> test
             </label>
         `;
 
@@ -20,10 +19,9 @@ describe('m3-switch', () => {
 
     it('should change after clicking', () => {
         // given
-        const document = new Window().document;
         document.body.innerHTML = `
             <label>
-                <m3-switch checked> test
+                <m3-switch checked></m3-switch> test
             </label>
         `;
         const toTest = document.querySelector('m3-switch');
@@ -36,15 +34,15 @@ describe('m3-switch', () => {
 
         // then
         expect(toTest.checked).toBe(false);
+        expect(toTest.hasAttribute('checked')).toBe(false);
     });
 
     it('should emit after change', () => {
         // given
         const callback = jest.fn();
-        const document = new Window().document;
         document.body.innerHTML = `
             <label>
-                <m3-switch checked> test
+                <m3-switch checked></m3-switch> test
             </label>
         `;
         const toTest = document.querySelector('m3-switch');

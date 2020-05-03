@@ -1,10 +1,11 @@
 {
   "name": "@mat3e-ux/demo",
   "version": "0.1.0",
+  "private": true,
   "description": "Demo of all the components",
   "main": "index.js",
   "scripts": {
-    "build": "webpack ./index.js -o dist/main.js --mode='development'"
+    "build": "webpack index.js -o dist/main.js --mode='development'"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
   },
   "homepage": "https://github.com/mat3e/ux#readme",
   "dependencies": {
-    "@mat3e-ux/switch": "^0.1.3"
+    "@mat3e-ux/switch": "^0.1.4",
+    "@mat3e-ux/stars": "^0.1.0"
   },
   "devDependencies": {
     "webpack": "^4.43.0",

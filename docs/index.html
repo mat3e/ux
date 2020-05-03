@@ -4,59 +4,115 @@
     <meta charset="UTF-8">
     <title>@mat3e-ux demos</title>
     <link rel="stylesheet" href="https://igoradamenko.github.io/awsm.css/css/awsm.min.css">
+    <link rel="stylesheet" href="https://igoradamenko.github.io/awsm.css/css/awsm_theme_black.min.css">
     <style>
         pre {
-            border: solid 1px black;
+            border: solid 1px;
         }
     </style>
 </head>
 <body>
 <header>
     <h1>@mat3e-ux</h1>
-    <p>Web Components all the things!</p>
+    <p>Web Component all the things!</p>
     <nav>
         <ul>
             <li>
-                <a href="#switch">@mat3e-ux/switch</a>
+                <a href="#switch">switch</a>
+            </li>
+            <li>
+                <a href="#stars">stars</a>
             </li>
         </ul>
     </nav>
 </header>
 <main>
     <article>
-        <section id="switch"></section>
-        <h2>@mat3e-ux/switch</h2>
-        <p>A simple switch button.</p>
-        <section>
-            <h3>Setup - npm</h3>
-            <p>Install from npm:</p>
-            <pre><code>npm i @mat3e-ux/switch</code></pre>
-            <p>Simple one-time import:</p>
-            <pre><code>import '@mat3e-ux/switch';</code></pre>
-            <p><strong>or</strong> "manual" registration:</p>
-            <pre><code>import Switch from '@mat3e-ux/switch/component';
-
-Switch.register();</code></pre>
-        </section>
-        <section>
-            <h3>Usage</h3>
-            <pre><code>&lt;m3-switch>&lt;/m3-switch></code></pre>
-            <m3-switch></m3-switch>
-            <pre><code>&lt;m3-switch round checked>&lt;/m3-switch></code></pre>
-            <m3-switch round checked></m3-switch>
-            <pre><code>&lt;m3-switch name="test" onchange="alert('changed!');">&lt;/m3-switch></code></pre>
-            <m3-switch name="test" onchange="alert('changed!');"></m3-switch>
-        </section>
-        <section>
-            <h3>CSS variables (override below)</h3>
-            <pre><style
-                    style="display: inline-block;"
-                    contentEditable="true">:root {
+        <section id="switch">
+            <h2>@mat3e-ux/switch</h2>
+            <p>A simple switch button</p>
+            <section>
+                <h3>Setup</h3>
+                <pre><code>&lt;script type="module" src="http://unpkg.com/@mat3e-ux/switch">&lt;/script></code></pre>
+                <p>Or with npm:</p>
+                <pre><code>npm i @mat3e-ux/switch</code></pre>
+                <pre><code>import '@mat3e-ux/switch';</code></pre>
+            </section>
+            <section>
+                <h3>Usage</h3>
+                <pre><code>&lt;m3-switch>&lt;/m3-switch></code></pre>
+                <m3-switch></m3-switch>
+                <pre><code>&lt;m3-switch round checked>&lt;/m3-switch></code></pre>
+                <m3-switch round checked></m3-switch>
+                <pre><code>&lt;m3-switch name="test" onchange="alert('changed!');">&lt;/m3-switch></code></pre>
+                <m3-switch name="test" onchange="alert('changed!');"></m3-switch>
+            </section>
+            <section>
+                <h3>CSS variables (override below)</h3>
+                <pre><style
+                        style="display: inline-block; width: 100%"
+                        contentEditable="true">:root {
     /*--m3-switch-color: #1da1f2;*/
 }</style></pre>
+            </section>
+        </section>
+        <section id="stars">
+            <h2>@mat3e-ux/stars</h2>
+            <p>Display rating as stars (readonly)</p>
+            <section>
+                <h3>Setup</h3>
+                <pre><code>&lt;script type="module" src="http://unpkg.com/@mat3e-ux/stars">&lt;/script></code></pre>
+                <p>Or with npm:</p>
+                <pre><code>npm i @mat3e-ux/stars</code></pre>
+                <pre><code>import '@mat3e-ux/stars';</code></pre>
+            </section>
+            <section>
+                <h3>Usage</h3>
+                <pre><code>&lt;m3-stars max="5" current="4.62036">&lt;/m3-stars></code></pre>
+                <m3-stars max="5" current="4.62036"></m3-stars>
+                <pre><code>&lt;m3-stars style="color: red" max="10" current="3.22">&lt;/m3-stars></code></pre>
+                <m3-stars style="color: red" max="10" current="3.22"></m3-stars>
+            </section>
+            <section>
+                <h3>Overriding symbols</h3>
+                <p>You can override a default ★ and ☆ symbols, setting static properties before registering the
+                    component:</p>
+                <pre><code>import Stars from "@mat3e-ux/stars/component";
+
+Stars.empty = '💀';
+Stars.full = '😄';
+Stars.register();</code></pre>
+                <p>
+                    <strong>Note</strong>: it will override symbols for all the <code>&lt;m3-stars></code> tags.
+                </p>
+                <p>
+                    Alternatively, you can reuse the component and create your own with overriden symbols like:
+                </p>
+                <pre><code>import '@mat3e-ux/stars'; // &lt;m3-stars> works as before
+import Stars from "@mat3e-ux/stars/component";
+
+// &lt;m3-emoji> works with the below symbols
+Stars.empty = '💀';
+Stars.full = '😄';
+customElements.define('m3-emoji', class extends Stars {});</code></pre>
+                <script type="module">
+                    import Stars from  'http://unpkg.com/@mat3e-ux/stars/component';
+                    Stars.empty = '💀';
+                    Stars.full = '😄';
+                    customElements.define('m3-emoji', class extends Stars {});
+                </script>
+                <m3-emoji max="5" current="3.5"></m3-emoji>
+            </section>
         </section>
     </article>
 </main>
-<script type="module" src="dist/main.js"></script>
+<script type="module" src="http://unpkg.com/@mat3e-ux/switch"></script>
+<script type="module" src="http://unpkg.com/@mat3e-ux/stars"></script>
+<a href="https://github.com/mat3e/ux" style="position: fixed; top: 0; left: 0">
+    <img width="149" height="149"
+         src="https://github.blog/wp-content/uploads/2008/12/forkme_left_red_aa0000.png?resize=149%2C149"
+         class="attachment-full size-full" alt="Fork me on GitHub"
+         data-recalc-dims="1">
+</a>
 </body>
 </html>

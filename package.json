@@ -3,15 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "jest --env=./temp-env"
+    "test": "jest --runInBand --env=jest-environment-happy-dom",
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.9.6",
-    "@jest/fake-timers": "^25.5.0",
-    "happy-dom": "github:mat3e/happy-dom#lib-temp",
     "jest": "^25.5.3",
-    "jest-mock": "^25.5.0",
-    "jest-util": "^25.5.0",
+    "jest-environment-happy-dom": "^0.0.42",
     "lerna": "^3.20.2"
   }
 }
