@@ -96,10 +96,12 @@ Stars.empty = '💀';
 Stars.full = '😄';
 customElements.define('m3-emoji', class extends Stars {});</code></pre>
                 <script type="module">
-                    import Stars from  'http://unpkg.com/@mat3e-ux/stars/component';
+                    import Stars from 'http://unpkg.com/@mat3e-ux/stars/component';
+
                     Stars.empty = '💀';
                     Stars.full = '😄';
-                    customElements.define('m3-emoji', class extends Stars {});
+                    customElements.define('m3-emoji', class extends Stars {
+                    });
                 </script>
                 <m3-emoji max="5" current="3.5"></m3-emoji>
             </section>
