@@ -26,6 +26,8 @@ Set of small Web Components which should have a positive impact on the web app U
 ## Roadmap
 [] Minify published npm code and skip publishing *.spec.js files
 
+[] `m3-switch` as the checkbox extension?
+
 [] Use JS private and static fields (when available in all the browsers). Or maybe just TypeScript?
 
 [] [Form-associated custom elements](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-face-example); [another source](https://web.dev/more-capable-form-controls/)
