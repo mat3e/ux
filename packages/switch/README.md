@@ -41,7 +41,7 @@ customElements.define('just-switch', Switch);
 <m3-switch onchange="alert('changed!');"></m3-switch>
 ```
 
-#### Exposed CSS variables
+### Exposed CSS variables
 ```
 --m3-switch-color: #4fd69c;
 ```
