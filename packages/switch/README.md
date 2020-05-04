@@ -61,6 +61,7 @@ Switch can be mixed with HTML forms, e.g.:
     
     <label id="baz">baz</label>
     <m3-switch name="baz" aria-labelledby="baz"></m3-switch>
+
     <button>submit</button>
 </form>
 ```
