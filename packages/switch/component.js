@@ -81,10 +81,6 @@ function setupLabelClickFor(component) {
 }
 
 export default class Switch extends CheckboxWrapper {
-    static get formAssociated() {
-        return true;
-    }
-
     static register() {
         customElements.define('m3-switch', Switch);
     }
