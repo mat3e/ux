@@ -81,8 +81,8 @@ function setupLabelClickFor(component) {
 }
 
 export default class Switch extends CheckboxWrapper {
-    static register() {
-        customElements.define('m3-switch', Switch);
+    static register(tag = 'm3-switch') {
+        customElements.define(tag, Switch);
     }
 
     constructor() {

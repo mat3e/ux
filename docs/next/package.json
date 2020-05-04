@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/mat3e/ux#readme",
   "dependencies": {
-    "@mat3e-ux/switch": "^0.2.0",
-    "@mat3e-ux/stars": "^0.2.0"
+    "@mat3e-ux/switch": "^0.2.3",
+    "@mat3e-ux/stars": "^0.2.1"
   },
   "devDependencies": {
     "webpack": "^4.43.0",

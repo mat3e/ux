@@ -31,7 +31,7 @@ import Switch from '@mat3e-ux/switch/component';
 Switch.register();
 
 // registering as a different tag:
-customElements.define('just-switch', Switch);
+Switch.register('just-switch');
 ```
 
 ## Usage

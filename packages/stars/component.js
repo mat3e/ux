@@ -1,6 +1,6 @@
 export default class Stars extends HTMLElement {
-    static register() {
-        customElements.define('m3-stars', Stars);
+    static register(tag = 'm3-stars') {
+        customElements.define(tag, Stars);
     }
 
     constructor() {
