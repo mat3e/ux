@@ -31,13 +31,21 @@
             <m3-switch aria-labelledby="lb"></m3-switch>
             <br/>
             <m3-switch name="test" onchange="alert('changed!');"></m3-switch>
-            <form method="get">
+            <form>
                 <fieldset>
-                    <m3-switch name="formSwitch"></m3-switch>
                     <label>
-                        <input type="checkbox" name="formCb" value="popo"> ?
+                        <m3-switch name="foo"></m3-switch>
+                        foo
                     </label>
-                    <button>sub</button>
+
+                    <label for="bar">bar</label>
+                    <m3-switch name="bar" id="bar" value="started"></m3-switch>
+
+                    <label id="baz">baz</label>
+                    <m3-switch name="baz" aria-labelledby="baz"></m3-switch>
+                    <div>
+                        <button>submit</button>
+                    </div>
                 </fieldset>
             </form>
             <style style="display: inline-block; width: 100%" contentEditable="true">:root {

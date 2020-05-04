@@ -37,16 +37,22 @@ describe('m3-switch', () => {
         document.body.innerHTML = `
             <form>
                 <m3-switch name="switch" value="super" checked></m3-switch>
+                <label>
+                    <m3-switch name="switch2" value="mega"></m3-switch>
+                </label>
             </form>
         `;
 
         // when
+        document.querySelector('label').click();
         // TODO: happy-dom doesn't support named elements
-        const toTest = document.querySelector('form').elements[0];
+        const toTest = document.querySelector('form').elements;
 
         // then
-        expect(toTest).toHaveProperty('name', 'switch');
-        expect(toTest).toHaveProperty('value', 'super');
+        expect(toTest[0]).toHaveProperty('name', 'switch');
+        expect(toTest[0]).toHaveProperty('value', 'super');
+        expect(toTest[1]).toHaveProperty('name', 'switch2');
+        expect(toTest[1]).toHaveProperty('value', 'mega');
     });
 
     it('should change after clicking', () => {

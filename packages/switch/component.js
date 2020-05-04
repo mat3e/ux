@@ -26,7 +26,6 @@ class CheckboxWrapper extends HTMLElement {
 
     connectedCallback() {
         const changeState = (event) => {
-            console.log(event.target);
             event.preventDefault();
             this.checked = !this.checked;
         }
@@ -60,13 +59,11 @@ class CheckboxWrapper extends HTMLElement {
 function setupLabelClickFor(component) {
     if (component.parentElement && component.parentElement instanceof HTMLLabelElement) {
         component.input.addEventListener('change', (event) => {
-            event.preventDefault();
             event.stopPropagation();
         });
         // Firefox - clicks inner input when clicking its label
         // Chrome - clicks component when clicking its label
         component.input.addEventListener('click', (event) => {
-            event.preventDefault();
             event.stopPropagation();
             component.checked = !component.checked;
         });
