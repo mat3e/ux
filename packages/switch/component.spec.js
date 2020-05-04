@@ -32,6 +32,19 @@ describe('m3-switch', () => {
         expect(toTest.getAttribute('aria-checked')).toBe('true');
     });
 
+    it('should NOT override set attribute', () => {
+        // given
+        document.body.innerHTML = `
+            <m3-switch tabindex="-1" checked></m3-switch>
+        `;
+
+        // when
+        const toTest = document.querySelector('m3-switch');
+
+        // then
+        expect(toTest.getAttribute('tabindex')).toBe('-1');
+    });
+
     it('should work with form', () => {
         // given
         document.body.innerHTML = `

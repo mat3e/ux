@@ -47,7 +47,7 @@ Switch.register('just-switch');
 ```
 
 ### Forms, accessibility
-By default `m3-switch` gets `role="checkbox"`, `tabindex="0"` and `aria-checked` attributes. `aria-checked` reflects the current state. Each switch changes its value from `"true"` to `"false"` and so on.
+If nothing provided, `m3-switch` gets `role="checkbox"` and `tabindex="0"`. Moreover, there is `aria-checked` attribute reflecting the current state. Each click changes it from `"true"` to `"false"` and so on.
 
 Switch can be mixed with HTML forms, e.g.:
 ```html

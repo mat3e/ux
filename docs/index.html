@@ -57,14 +57,16 @@
                 <pre><style
                         style="display: inline-block; width: 100%"
                         contentEditable="true">:root {
-    /*--m3-switch-color: #1da1f2;*/
-}</style></pre>
+                    /*--m3-switch-color: #1da1f2;*/
+                }</style></pre>
             </section>
             <section>
                 <h3>Forms, accessibility</h3>
-                <p>By default <code>m3-switch</code> gets <code>role="checkbox"</code>, <code>tabindex="0"</code> and
-                    <code>aria-checked</code> attributes. <code>aria-checked</code> reflects the current state. Each
-                    switch changes its value from <code>"true"</code> to <code>"false"</code> and so on.</p>
+                <p>
+                    If nothing provided, <code>m3-switch</code> gets <code>role="checkbox"</code> and
+                    <code>tabindex="0"</code>. Moreover, there is <code>aria-checked</code> attribute reflecting the
+                    current state. Each click changes it from <code>"true"</code> to <code>"false"</code> and so on.
+                </p>
                 <p>Switch can be mixed with HTML forms, e.g.:</p>
                 <pre><code>&lt;form>
     &lt;fieldset>
