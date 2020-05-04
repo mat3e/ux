@@ -18,10 +18,31 @@
             <h2>@mat3e-ux/switch</h2>
             <m3-switch></m3-switch>
             <m3-switch round checked></m3-switch>
+            <br/>
+            <label id="lb1">
+                <m3-switch></m3-switch>
+                test label
+            </label>
+            <br/>
+            <label id="lb2" for="chk">test label 2</label>
+            <m3-switch id="chk"></m3-switch>
+            <br/>
+            <label id="lb">test label 3</label>
+            <m3-switch aria-labelledby="lb"></m3-switch>
+            <br/>
             <m3-switch name="test" onchange="alert('changed!');"></m3-switch>
+            <form method="get">
+                <fieldset>
+                    <m3-switch name="formSwitch"></m3-switch>
+                    <label>
+                        <input type="checkbox" name="formCb" value="popo"> ?
+                    </label>
+                    <button>sub</button>
+                </fieldset>
+            </form>
             <style style="display: inline-block; width: 100%" contentEditable="true">:root {
-    /*--m3-switch-color: #1da1f2;*/
-}</style>
+                /*--m3-switch-color: #1da1f2;*/
+            }</style>
         </section>
         <section id="stars">
             <h2>@mat3e-ux/stars</h2>
