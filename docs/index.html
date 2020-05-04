@@ -44,16 +44,56 @@
                 <m3-switch></m3-switch>
                 <pre><code>&lt;m3-switch round checked>&lt;/m3-switch></code></pre>
                 <m3-switch round checked></m3-switch>
-                <pre><code>&lt;m3-switch name="test" onchange="alert('changed!');">&lt;/m3-switch></code></pre>
-                <m3-switch name="test" onchange="alert('changed!');"></m3-switch>
+                <pre><code>&lt;m3-switch onchange="alert('changed!');">&lt;/m3-switch></code></pre>
+                <m3-switch onchange="alert('changed!');"></m3-switch>
             </section>
             <section>
                 <h3>CSS variables (override below)</h3>
                 <pre><style
                         style="display: inline-block; width: 100%"
                         contentEditable="true">:root {
-    /*--m3-switch-color: #1da1f2;*/
-}</style></pre>
+                    /*--m3-switch-color: #1da1f2;*/
+                }</style></pre>
+            </section>
+            <section>
+                <h3>Forms cooperation, accessibility</h3>
+                <p>By default <code>m3-switch</code> gets <code>role="checkbox"</code>, <code>tabindex="0"</code> and
+                    <code>aria-checked</code> attributes. <code>aria-checked</code> reflects the current state. Each
+                    switch changes its value from <code>"true"</code> to <code>"false"</code> and so on.</p>
+                <p>Switch can be mixed with HTML forms, e.g.:</p>
+                <pre><code>&lt;form>
+    &lt;fieldset>
+        &lt;label>
+            &lt;m3-switch name="foo">&lt;/m3-switch> foo
+        &lt;/label>
+
+        &lt;label for="bar">bar&lt;/label>
+        &lt;m3-switch name="bar" id="bar" value="started">&lt;/m3-switch>
+
+        &lt;label id="baz">baz&lt;/label>
+        &lt;m3-switch name="baz" aria-labelledby="baz">&lt;/m3-switch>
+        &lt;div>
+            &lt;button>submit&lt;/button>
+        &lt;/div>
+    &lt;/fieldset>
+&lt;/form></code></pre>
+                <form>
+                    <fieldset>
+                        <label>
+                            <m3-switch name="foo"></m3-switch>
+                            foo
+                        </label>
+
+                        <label for="bar">bar</label>
+                        <m3-switch name="bar" id="bar" value="started"></m3-switch>
+
+                        <label id="baz">baz</label>
+                        <m3-switch name="baz" aria-labelledby="baz"></m3-switch>
+                        <div>
+                            <button>submit</button>
+                        </div>
+                    </fieldset>
+                </form>
             </section>
         </section>
         <section id="stars">
