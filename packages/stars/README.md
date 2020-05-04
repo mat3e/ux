@@ -31,7 +31,7 @@ import Stars from '@mat3e-ux/stars/component';
 Stars.register();
 
 // registering as a different tag:
-Switch.register('just-stars');
+Stars.register('just-stars');
 ```
 
 ## Usage
