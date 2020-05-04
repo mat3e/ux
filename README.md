@@ -4,6 +4,8 @@
 # UX
 Set of small Web Components which should have a positive impact on the web app UX.
 
+[**demo**](https://mat3e.github.io/ux/)
+
 ## Components
 * [m3-switch](https://github.com/mat3e/ux/tree/master/packages/switch)
 * [m3-stars](https://github.com/mat3e/ux/tree/master/packages/stars)

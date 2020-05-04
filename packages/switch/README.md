@@ -46,7 +46,7 @@ Switch.register('just-switch');
 --m3-switch-color: #4fd69c;
 ```
 
-### Forms cooperation, accessibility
+### Forms, accessibility
 By default `m3-switch` gets `role="checkbox"`, `tabindex="0"` and `aria-checked` attributes. `aria-checked` reflects the current state. Each switch changes its value from `"true"` to `"false"` and so on.
 
 Switch can be mixed with HTML forms, e.g.:

@@ -15,7 +15,7 @@ describe('m3-stars', () => {
         // then
         expect(toTest.shadowRoot.querySelectorAll('span'))
             .toHaveLength(1);
-        expect(toTest.shadowRoot.querySelector('span').nextSibling.textContent)
+        expect(getSymbolAfterMarkedSymbolIn(toTest))
             .toEqual(Stars.empty);
     });
 
@@ -28,6 +28,7 @@ describe('m3-stars', () => {
         customElements.define('m3-emoji', class extends Stars {
         });
         document.body.innerHTML = `
+            <m3-stars max="5" current="4"></m3-stars>
             <m3-emoji max="5" current="4"></m3-emoji>
         `;
 
@@ -35,7 +36,15 @@ describe('m3-stars', () => {
         const toTest = document.querySelector('m3-emoji');
 
         // then
-        expect(toTest.shadowRoot.querySelector('span').nextSibling.textContent)
+        expect(getSymbolAfterMarkedSymbolIn(toTest))
             .toEqual(empty);
+        // TODO: is overriden in happy-dom
+        // expect(getSymbolAfterMarkedSymbolIn(document.querySelector('m3-stars')))
+        //     .not
+        //     .toEqual(empty);
     });
 });
+
+function getSymbolAfterMarkedSymbolIn(starsComponent) {
+    return starsComponent.shadowRoot.querySelector('span').nextSibling.textContent;
+}
