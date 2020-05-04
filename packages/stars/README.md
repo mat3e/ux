@@ -37,6 +37,7 @@ customElements.define('just-stars', Stars);
 ## Usage
 ```html
 <m3-stars max="5" current="4.62036"></m3-stars>
+<m3-stars max="5" current="2.55" title="2.55"></m3-stars>
 <m3-stars style="color: red" max="5" current="3.62036"></m3-stars>
 ```
 
