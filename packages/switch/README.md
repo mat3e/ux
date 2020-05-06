@@ -47,7 +47,7 @@ Switch.register('just-switch');
 ```
 
 ### Forms, accessibility
-If nothing provided, `m3-switch` gets `role="checkbox"` and `tabindex="0"`. Moreover, there is `aria-checked` attribute reflecting the current state. Each click changes it from `"true"` to `"false"` and so on.
+If not provided, `m3-switch` gets `role="checkbox"` and `tabindex="0"`. Moreover, there is `aria-checked` attribute reflecting the current state. Each click changes it from `"true"` to `"false"` and so on.
 
 Switch can be mixed with HTML forms, e.g.:
 ```html
