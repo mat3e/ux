@@ -1,5 +1,5 @@
-[![Version](https://img.shields.io/npm/v/@mat3e-ux/stars.svg?style=flat-square)](https://www.npmjs.com/package/@mat3e-ux/stars)
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg?style=flat-square)](https://www.webcomponents.org/element/@mat3e-ux/stars)
+[![Version](https://img.shields.io/npm/v/@mat3e-ux/stars.svg)](https://www.npmjs.com/package/@mat3e-ux/stars)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@mat3e-ux/stars)
 
 # @mat3e-ux/stars
 Display rating as stars (readonly)
