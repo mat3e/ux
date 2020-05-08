@@ -1,4 +1,5 @@
-[![Version](https://img.shields.io/npm/v/@mat3e-ux/stars.svg)](https://www.npmjs.com/package/@mat3e-ux/stars)
+[![Version](https://img.shields.io/npm/v/@mat3e-ux/stars.svg?style=flat-square)](https://www.npmjs.com/package/@mat3e-ux/stars)
+<!-- [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg?style=flat-square)](https://www.webcomponents.org/element/owner/my-element) -->
 
 # @mat3e-ux/stars
 Display rating as stars (readonly)
@@ -35,6 +36,16 @@ Stars.register('just-stars');
 ```
 
 ## Usage
+<!--
+```
+<custom-element-demo>
+  <template>
+    <script type="module" src="https://unpkg.com/@mat3e-ux/stars"></script>
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
 ```html
 <m3-stars max="5" current="4.62036"></m3-stars>
 <m3-stars max="5" current="2.55" title="2.55"></m3-stars>

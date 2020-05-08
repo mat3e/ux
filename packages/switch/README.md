@@ -1,4 +1,5 @@
-[![Version](https://img.shields.io/npm/v/@mat3e-ux/switch.svg)](https://www.npmjs.com/package/@mat3e-ux/switch)
+[![Version](https://img.shields.io/npm/v/@mat3e-ux/switch.svg?style=flat-square)](https://www.npmjs.com/package/@mat3e-ux/switch)
+<!-- [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg?style=flat-square)](https://www.webcomponents.org/element/owner/my-element) -->
 
 # @mat3e-ux/switch
 A simple switch button
@@ -35,6 +36,16 @@ Switch.register('just-switch');
 ```
 
 ## Usage
+<!--
+```
+<custom-element-demo>
+  <template>
+    <script type="module" src="https://unpkg.com/@mat3e-ux/switch"></script>
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
 ```html
 <m3-switch></m3-switch>
 <m3-switch round checked></m3-switch>
