@@ -22,6 +22,8 @@
     "star",
     "ux"
   ],
+  "author": "mat3e",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mat3e/ux/issues"
   },
