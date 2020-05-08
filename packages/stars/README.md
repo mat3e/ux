@@ -5,7 +5,7 @@ Display rating as stars (readonly)
 
 ★★★☆☆
 
-[**example**](https://mat3e.github.io/ux/#stars)
+[**LIVE EXAMPLE**](https://mat3e.github.io/ux/#stars)
 
 ## Setup
 

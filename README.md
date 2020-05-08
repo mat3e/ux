@@ -26,7 +26,7 @@ Set of small Web Components which should have a positive impact on the web app U
 - [favico.js](https://github.com/ejci/favico.js) - whole new level of using favicons
 
 ## Roadmap
-[] Minify published npm code and skip publishing *.spec.js files
+[] Minify published npm code and skip publishing *.spec.js files; publishing all-in version and modules separately
 
 [] `m3-switch` as the checkbox extension?
 

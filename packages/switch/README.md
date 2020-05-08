@@ -5,7 +5,7 @@ A simple switch button
 
 ![Basic view](https://mat3e.github.io/ux/img/switch.png "Basic view")
 
-[**example**](https://mat3e.github.io/ux/#switch)
+[**LIVE EXAMPLE**](https://mat3e.github.io/ux/#switch)
 
 ## Setup
 
