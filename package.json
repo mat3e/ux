@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "author": "mat3e",
+  "license": "ISC",
   "scripts": {
     "test": "jest --runInBand --env=jest-environment-happy-dom",
     "publish": "lerna publish"

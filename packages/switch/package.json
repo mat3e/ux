@@ -21,10 +21,8 @@
     "checkbox",
     "ux"
   ],
-  "author": "mat3e",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mat3e/ux/issues"
   },
-  "homepage": "https://mat3e.github.io/ux"
+  "homepage": "https://mat3e.github.io/ux/#switch"
 }
