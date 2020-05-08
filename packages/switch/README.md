@@ -1,5 +1,5 @@
-[![Version](https://img.shields.io/npm/v/@mat3e-ux/switch.svg?style=flat-square)](https://www.npmjs.com/package/@mat3e-ux/switch)
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg?style=flat-square)](https://www.webcomponents.org/element/@mat3e-ux/switch)
+[![Version](https://img.shields.io/npm/v/@mat3e-ux/switch.svg)](https://www.npmjs.com/package/@mat3e-ux/switch)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@mat3e-ux/switch)
 
 # @mat3e-ux/switch
 A simple switch button
