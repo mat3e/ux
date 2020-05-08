@@ -1,5 +1,5 @@
-![build](https://github.com/mat3e/ux/workflows/Node.js%20CI/badge.svg?style=flat-square)
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square)](https://lerna.js.org/)
+![build](https://github.com/mat3e/ux/workflows/Node.js%20CI/badge.svg)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 # UX
 Set of small Web Components which should have a positive impact on the web app UX.
