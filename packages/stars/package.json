@@ -1,6 +1,6 @@
 {
   "name": "@mat3e-ux/stars",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Display rating as stars (readonly)",
   "main": "index.js",
   "repository": {
